@@ -18,6 +18,10 @@ from django.urls import include, path
 from django.conf.urls.static import static
 from django.conf import settings
 
+admin.site.site_header = "IBM Project"
+admin.site.site_title = "Online Courses"
+admin.site.index_title = "Welcome to Online Courses Portal"
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('onlinecourse/', include('onlinecourse.urls')),
